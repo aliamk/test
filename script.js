@@ -4,10 +4,10 @@ am4core.useTheme(am4themes_dataviz);
 var colorSet = new am4core.ColorSet();
 
 // Clone the LP_Companies multi-dimensional/nested array
-const cloneData = JSON.parse(JSON.stringify(LP_Companies))
+const clonedData = JSON.parse(JSON.stringify(LP_Companies))
 
 // TOP ROW: Add the total funds of duplicate fund types (e.g., all pension funds together 21,496)
-const output = cloneData.reduce((accumulator, item) => {
+const output = clonedData.reduce((accumulator, item) => {
     // Search data with matching 'type' properties
     const type = item.type,
     found = accumulator.find(element => {
@@ -37,10 +37,8 @@ const totalFunds = output.reduce(function(acc, item) {
 }, 0)
 
 
-
 // RENDER: CREATE DOM NODES
 const createNodes = () => { 
-
     // Create main body container (for everything else to append to)
     const container = document.querySelector('.container')
     container.classList.add('container')
@@ -71,8 +69,7 @@ const createNodes = () => {
         companyContainers.append(buttonCompany)        
         container.append(companyContainers)      
         console.log('companyContainers', item)  
-    })  
-
+    }) 
 
     // THIRD ROW: Create buttons/container for FUND TYPE buttons (Banking: 2 )
     const typeContainers = document.createElement('div')
@@ -97,7 +94,6 @@ const createNodes = () => {
 
 // Click buttons
 const filterFundTypes = (item) => {
-
     console.log('Fund Name: ', item)    
 }
 
