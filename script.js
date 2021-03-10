@@ -18,7 +18,7 @@ LP_Companies.forEach(obj => {
 console.log('counterObject: ', counter)
 
 
-// Add the total funds of duplicate fund types (e.g., all pension funds together)
+// Add the total funds of duplicate fund types (e.g., all pension funds together 2149)
 let output = LP_Companies.reduce((accumulator, item) => {
     var type = item.type,
     found = accumulator.find(element => {
@@ -80,7 +80,7 @@ function createNodes() {
         typeContainers.append(buttonType)    
     })
 
-    // Every fund added together
+    // Every fund added together (79,856)
     const buttonTotalFunds = document.createElement('button')
     buttonTotalFunds.classList.add('totalButton')  
     buttonTotalFunds.textContent = `Every fund's value added together: ${totalFunds}`
