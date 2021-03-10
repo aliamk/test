@@ -93,8 +93,8 @@ const createNodes = () => {
 }
 
 // Click buttons
-const filterFundTypes = (item) => {
-    console.log('Fund Name: ', item)    
+const filterFundTypes = (item) => {      
+    console.log('Fund Type: ', item)
 }
 
 // Onload
