@@ -19,7 +19,7 @@ const output = clonedData.reduce((accumulator, item) => {
     return accumulator
 }, [])
 
-console.log('output: ', output) // 19086
+// console.log('output: ', output) // 19086
 
 
 // THIRD ROW: Tally instances of duplicate fund types from data LP_Companies e.g., How many Banking companies are there? (2)
@@ -32,7 +32,7 @@ LP_Companies.forEach(obj => {
 
 
 // BOTTOM ROW: Add total number of funds all together (should be 79,856)
-const totalFunds = output.reduce(function(acc, item) {
+const totalFunds = output.reduce((acc, item) => {
     return item.funds + acc
 }, 0)
 
@@ -68,7 +68,7 @@ const createNodes = () => {
         buttonCompany.textContent = `${item.name}: ${item.funds}`
         companyContainers.append(buttonCompany)        
         container.append(companyContainers)      
-        console.log('companyContainers', item)  
+        // console.log('companyContainers', item)  
     }) 
 
     // THIRD ROW: Create buttons/container for FUND TYPE buttons (Banking: 2 )
