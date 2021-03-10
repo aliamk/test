@@ -50,10 +50,9 @@ function createNodes() {
         buttonCompany.textContent = `${item.name}: ${item.totalFunds}`
         companyContainers.append(buttonCompany)        
         container.append(companyContainers)
-        LP_Companies.forEach((item) => { console.log(item)})
+        console.log(item)
     })
     
-
     // Create text containers for fund totals 
     const textContainer = document.createElement('div')
     textContainer.classList.add('text-container')
@@ -66,8 +65,6 @@ function createNodes() {
         textContainer.append(textFields)
         container.append(textContainer)
     })
-
-
 
     // Create container for FUND TYPE buttons (Banking: 2 )
     const typeContainers = document.createElement('div')
