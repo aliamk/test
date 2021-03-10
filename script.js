@@ -3,10 +3,11 @@ am4core.useTheme(am4themes_animated);
 am4core.useTheme(am4themes_dataviz);
 var colorSet = new am4core.ColorSet();
 
-console.log('array funds: ', LP_Companies[0].funds) // 3520
+// Clone the LP_Companies multi-dimensional/nested array
+const cloneData = JSON.parse(JSON.stringify(LP_Companies))
 
 // TOP ROW: Add the total funds of duplicate fund types (e.g., all pension funds together 21,496)
-const output = LP_Companies.reduce((accumulator, item) => {
+const output = cloneData.reduce((accumulator, item) => {
     // Search data with matching 'type' properties
     const type = item.type,
     found = accumulator.find(element => {
