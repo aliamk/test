@@ -26,43 +26,43 @@ const investors_WORLD_timeline = [
 const LP_Companies = [
     {
         "name": "Microsoft Pension", 
-        "totalFunds": 3520,
+        "funds": 3520,
         "type": "Pension Fund"
     },{
         "name": "Apple Pension",
-        "totalFunds": 7410,
+        "funds": 7410,
         "type": "Pension Fund"
     },{
         "name": "Japan Development Bank",
-        "totalFunds": 2410,
+        "funds": 2410,
         "type": "Development Bank"
     },{
         "name": "Teacher's Pension",
-        "totalFunds": 8156,
+        "funds": 8156,
         "type": "Pension Fund"
     },{
         "name": "Norway Development Bank",
-        "totalFunds": 3410,
+        "funds": 3410,
         "type": "Development Bank"
     },{
         "name": "England Wealth Fund",
-        "totalFunds": 1020,
+        "funds": 1020,
         "type": "Sovereign Wealth Fund"
     },{
         "name": "Oxford Endowment Fund",
-        "totalFunds": 1300,
+        "funds": 1300,
         "type": "Endowment"
     },{
         "name": "Deutsche Bank",
-        "totalFunds": 13210,
+        "funds": 13210,
         "type": "Banking"
     },{
         "name": "HSBC",
-        "totalFunds": 16210,
+        "funds": 16210,
         "type": "Banking"
     },{
         "name": "Cambridge Endowment Fund",
-        "totalFunds": 23210,
+        "funds": 23210,
         "type": "Endowment"
     }
 ];
