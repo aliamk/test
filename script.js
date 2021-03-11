@@ -91,7 +91,7 @@ const createNodes = () => {
     container.append(buttonTotalFunds)
 }
 
-// Click buttons
+/* =============== ONCLICK FUNCTION (line 83)  ===============  */
 const filterFundTypes = (item) => {      
     console.log('Fund Type: ', item)
 }
